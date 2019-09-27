@@ -12,5 +12,6 @@ const loadData = () => {
 
 module.exports.list = (cp) => {
     loadData();
-    return list.filter(res => res.cp === cp);
+    //return list.filter(res => res.cp === cp);
+    return list.filter(res => res.codigo === cp);
 }
